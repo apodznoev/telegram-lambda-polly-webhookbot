@@ -97,13 +97,13 @@ class DictionaryService {
 
         response.getSynsets().forEach(synset -> {
             stringBuilder.append(SUBHEADER_SYMBOL).append(" ").append(counter.incrementAndGet()).append(".");
-            stringBuilder.append("\n");
 
             if (!synset.getCategories().isEmpty()) {
                 stringBuilder.append(" (");
                 Joiner.on(",").appendTo(stringBuilder, synset.getCategories());
                 stringBuilder.append(" )");
             }
+            stringBuilder.append("\n");
             stringBuilder.append("\n");
 
             synset.getTerms().forEach(term -> {
