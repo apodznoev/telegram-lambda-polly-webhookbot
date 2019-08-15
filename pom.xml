@@ -19,7 +19,7 @@
         <dependency>
             <groupId>org.telegram</groupId>
             <artifactId>telegrambots</artifactId>
-            <version>3.6.1</version>
+            <version>4.4.0.1</version>
         </dependency>
         <dependency>
             <groupId>com.amazonaws</groupId>
@@ -41,18 +41,36 @@
             <artifactId>aws-lambda-java-core</artifactId>
             <version>1.2.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.asynchttpclient</groupId>
+            <artifactId>async-http-client</artifactId>
+            <version>2.10.1</version>
+        </dependency>
 
         <dependency>
             <groupId>com.amazonaws</groupId>
             <artifactId>aws-java-sdk-polly</artifactId>
-            <version>1.11.77</version>
+            <version>1.11.610</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.vdurmont</groupId>
+            <artifactId>emoji-java</artifactId>
+            <version>3.1.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.8</version>
+            <scope>provided</scope>
         </dependency>
 
     </dependencies>
 
 
     <build>
-        <finalName>lambda-telegram-onboarding</finalName>
+        <finalName>lambda-telegram-polly</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
