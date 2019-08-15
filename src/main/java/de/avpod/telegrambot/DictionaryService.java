@@ -92,6 +92,7 @@ class DictionaryService {
         stringBuilder.append(HEADER_SYMBOL);
         stringBuilder.append(" Gruppe ähnlichen Bedeutungen");
         stringBuilder.append("\n");
+        stringBuilder.append("\n");
         AtomicInteger counter = new AtomicInteger(0);
 
         response.getSynsets().forEach(synset -> {
